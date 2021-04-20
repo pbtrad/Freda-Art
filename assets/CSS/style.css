@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+
+
+
+.navbar .navbar-toggler{
+    z-index:1000
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: #f1f1f1;
+    text-shadow: 0 0 5px #fff;
+}
+@media (max-width: 991.98px){
+    .navbar .navbar-collapse{
+        background:rgba(0,0,0,0.85);
+        opacity:0;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        transition:opacity 0.35s ease;
+        display:flex;
+        flex-direction:column;
+        align-content:center;
+        text-align:center !important
+    }
+    .navbar .navbar-collapse.collapse{
+        display:flex;
+        opacity:0;
+        pointer-events:none
+    }
+    .navbar .navbar-collapse.collapsing[style*="height"]{
+        opacity:1;
+        height:100vh !important
+    }
+    .navbar .navbar-collapse.collapsing{
+        opacity:0;
+        height:100vh
+    }
+    .navbar .navbar-collapse.collapse.show{
+        opacity:1;
+        pointer-events:auto
+    }
+    .navbar .navbar-collapse .navbar-nav{
+        margin-right:initial !important;
+        margin-top:auto;
+        margin-bottom:auto
+    }
+}
+
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    /*z-index: 1;*/
+    color: white;
+  }
+  
+  .caption h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+  }
+
+.main-container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  #landing-img {
+    /*background-image: url(../../assets/img/guitar3.png);*/
+    background-image: url(/./assets/images/sunset.jpg);
+    filter: sepia(30%);
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    z-index: -100;
+    animation-name: img-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition: all 1000ms;
+    font-family: 'Cabin', sans-serif;
+  }
+
+  @keyframes img-zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-left: initial !important;
+    }
+}
