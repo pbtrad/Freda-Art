@@ -53,6 +53,7 @@
 }
 
 
+
 .caption {
     width: 100%;
     max-width: 100%;
@@ -98,6 +99,11 @@
     font-family: 'Cabin', sans-serif;
   }
 
+  .row {
+    margin: 15px;
+  }
+
+
   @keyframes img-zoom {
     from {
       transform: scale(1);
@@ -111,4 +117,10 @@
     .navbar-nav {
         margin-left: initial !important;
     }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
 }
