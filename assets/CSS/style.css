@@ -52,7 +52,58 @@
     }
 }
 
+#bio-body {
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Cabin', sans-serif;
+}
 
+#bio-top {
+  display: inline-block;
+  margin-top: 10%;
+  
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+#bio-top p {
+}
+
+.bio-img-wrap-top img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 25%;
+}
+
+#bio-bottom {
+  display: inline-block;
+  margin-top: 10%;
+  width: 100%;
+  margin-bottom: 10%;
+  font-size: 1.2rem;
+}
+
+#bio-bottom p {
+  margin-left: 7%;
+}
+
+#bio-top h1 {
+  position: relative;
+  font-size: 5rem;
+  bottom: 5rem;
+}
+
+.bio-img-wrap-bottom img {
+  width: 80%;
+  height: 80%;
+  /*position: relative;*/
+}
+
+#album-bio {
+  width: 40vh;
+  height: 40vh;
+}
 
 .caption {
     width: 100%;
